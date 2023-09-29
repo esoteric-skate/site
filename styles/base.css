@@ -1,6 +1,19 @@
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+/*=======================================
+This Is All Of The Setup And Base CSS
+Do Not Write NEW Css Here Use "style.css"
+New CSS In "style.css" Can Overwrite This
+=======================================*/
+
+/* Imports Two Fonts */
+@import url(ttps://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+@font-face {
+	font-family: "VanBerger";
+	src: url("../fonts/VanBerger.otf");
+}
 
 :root {
+	/* Set Up Color Variables */
 	--bg: #222222;
 	--fg: #eeeeee;
 	--accent: #ba90ee;
@@ -18,6 +31,10 @@ body {
 .content {
 	opacity: 0;
 	animation: fadeIn 1s ease 0.2s forwards;
+	max-width: 1366px;
+	padding: 0 5vw;
+	margin: auto;
+	padding-bottom: 2.5em;
 }
 
 .header {
@@ -28,17 +45,28 @@ body {
 }
 
 .header>* {
+	align-content: center;
 	color: var(--fg);
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 1em;
 	text-align: center;
+	float: right;
+	padding: 0.85em;
+	display: block;
 }
 
-.header a {
+.menuLogo {
 	float: left;
-	display: block;
-	padding: 0.85em;
+	font-family: 'VanBerger';
+	font-size: 1.1em;
+}
+
+.menuLogo>span {
+	color: var(--accent);
+}
+
+.menuLogo:hover>* {
+	color: var(--bg);
 }
 
 .header a:hover {
@@ -89,11 +117,12 @@ body {
 	margin: 0.4em;
 }
 
+/* Fades In The Content Of The Page (Sans Menu & Footer) */
 @keyframes fadeIn {
 	from {
 		opacity: 0;
 	}
-	
+
 	to {
 		opacity: 1;
 	}
