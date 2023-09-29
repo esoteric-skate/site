@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-	if (document.getElementsByClassName("brandname") !== null) {
-		setInterval(() => {
+	setInterval(() => {
+		document.title = "「 " + glitch("ESOTERIC") + " 」";
+		if (document.getElementsByClassName("brandname") !== null) {
 			document.getElementsByClassName("brandname")[0].innerText = glitch("ESOTERIC");
-			document.title =  "「 " + glitch("ESOTERIC") + " 」";
-		}, 80);
-	}
+		}
+	}, 80);
 });
 
 function glitch(input) {
