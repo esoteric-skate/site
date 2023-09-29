@@ -55,14 +55,14 @@ body {
 	display: block;
 }
 
+span.purple {
+	color: var(--accent);
+}
+
 .menuLogo {
 	float: left;
 	font-family: 'VanBerger';
 	font-size: 1.1em;
-}
-
-.menuLogo>span {
-	color: var(--accent);
 }
 
 .menuLogo:hover>* {

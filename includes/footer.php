@@ -10,7 +10,7 @@
 
     // The footer
     echo("<div class=\"footer\"> \n");
-    echo("\t<p>Copyright © 2023 ESOTERIC, Inc.</p> \n");
+    echo("\t<p>Copyright <span class=\"purple\">©</span> 2023 ESOTERIC, Inc.</p> \n");
     echo("</div>");
 
     // Close The Content & HTML Tags, (Opened In "boilerplate.php")
