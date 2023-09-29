@@ -1,3 +1,5 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 :root {
 	--bg: #222222;
 	--fg: #eeeeee;
@@ -11,6 +13,11 @@ body {
 	font-family: Helvetica, Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+.content {
+	opacity: 0;
+	animation: fadeIn 1s ease 0.2s forwards;
 }
 
 .header {
@@ -59,10 +66,11 @@ body {
 
 .greeting {
 	font-size: clamp(2.5rem, -0.6rem + 8vw, 3.5rem);
+	margin: auto 1em;
 }
 
 .brandname {
-	font-family: monospace;
+	font-family: 'Fira Code', monospace;
 	text-shadow: 0 0 10px var(--accent);
 }
 
@@ -79,4 +87,14 @@ body {
 
 .footer>* {
 	margin: 0.4em;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
 }

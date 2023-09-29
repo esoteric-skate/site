@@ -1,6 +1,6 @@
-<?php include("../includes/head.php") ?>
+<?php include("../includes/boilerplate.php") ?>
 
 <!-- Put Code Here -->
 <p>Here is Some Example Text!</p>
 
-<?php include("../includes/boilerplate.php") ?>
+<?php include("../includes/footer.php") ?>
