@@ -1,8 +1,54 @@
 :root {
-	background-color: #222222;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #eeeeee;
-	font-size: clamp(1rem, 5vw, 2.5rem);
+	--bg: #222222;
+	--fg: #eeeeee;
+	--accent: #ba90ee;
+
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+body {
+	font-family: Helvetica, Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid var(--fg);
+	background-color: var(--bg);
+}
+
+.header>* {
+	color: var(--fg);
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+}
+
+.header a {
+	float: left;
+	display: block;
+	padding: 0.85em;
+}
+
+.header a:hover {
+	background-color: var(--fg);
+	color: var(--bg);
+}
+
+.header .icon {
+	display: none;
+	padding: 1em;
+}
+
+.logo {
+	margin: 5vh auto;
+	width: min(80vh, 90vw);
+	max-width: 1000px;
+	object-fit: scale-down;
 }
 
 .centered {
@@ -11,14 +57,26 @@
 	text-align: center;
 }
 
-#brandname {
+.greeting {
+	font-size: clamp(2.5rem, -0.6rem + 8vw, 3.5rem);
+}
+
+.brandname {
 	font-family: monospace;
-	text-shadow: 0 0 10px #ba90ee;
+	text-shadow: 0 0 10px var(--accent);
 }
 
-#logo {
-	margin: auto;
-	width: 50%;
-	object-fit: scale-down;
+.footer {
+	border-top: 1px solid var(--fg);
+	height: min-content;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--bg);
 }
 
+.footer>* {
+	margin: 0.4em;
+}

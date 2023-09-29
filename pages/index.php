@@ -1,10 +1,8 @@
 <?php include("../includes/head.php") ?>
 
-<body>
-    <div class="centered">
-        <img id="logo" alt="Triangle With Text \'ESOTERIC\'" src="../assets/triangle.png" />
-        <p>Welcome To <span id="brandname">ESOTERIC</span> Skate</p>
-    </div>
-</body>
+<div class="centered">
+    <img class="logo" alt="Triangle With Text \'ESOTERIC\'" src="../assets/triangle.png" />
+    <p class="greeting">Welcome To <span class="brandname">ESOTERIC</span> Skate</p>
+</div>
 
-</html>
+<?php include("../includes/boilerplate.php") ?>

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-	if (document.getElementById("brandname") !== null) {
-		setInterval(() => { 
-			document.getElementById("brandname").innerText = glitch("ESOTERIC");
+	if (document.getElementsByClassName("brandname") !== null) {
+		setInterval(() => {
+			document.getElementsByClassName("brandname")[0].innerText = glitch("ESOTERIC");
 			document.title = glitch("ESOTERIC")
 		}, 100);
 	}
