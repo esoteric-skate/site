@@ -16,7 +16,7 @@
     echo "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /> \n";
     echo "\t<meta name=\"description\" content=\"スケート\" /> \n";
     echo "\t<meta name=\"theme-color\" content=\"#ba90ee\" /> \n";
-    echo "\t<link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon.ico\" /> \n";
+    echo "\t<link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/images/favicon.ico\" /> \n";
     echo "\t<link rel=\"stylesheet\" href=\"../styles/style.css\" /> \n";
     echo "\t<script type=\"text/javascript\" src=\"../scripts/index.js\"></script> \n";
     echo "</head> \n";
