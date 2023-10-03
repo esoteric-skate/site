@@ -30,8 +30,8 @@ body {
 }
 
 .content {
-	opacity: 1;
-	/* animation: fadeIn 1s ease 0.2s forwards; */
+	opacity: 0;
+	animation: fadeIn 1.5s ease 0.2s forwards;
 	max-width: 1366px;
 	padding: 0 5vw;
 	margin: auto;
@@ -63,7 +63,7 @@ span.purple {
 .menuLogo {
 	float: left;
 	font-family: 'VanBerger';
-	font-size: 1.1em;
+	font-size: 1.015em;
 }
 
 .menuLogo:hover>* {
@@ -114,9 +114,98 @@ span.purple {
 	background-color: var(--bg);
 }
 
-.footer>* {
-	margin: 0.4em;
+.login,
+.register {
+	margin: 2em;
+	padding: 2em;
+	border: 2px solid var(--fg);
+	font-size: clamp(1rem, -0.2rem + 2vw, 1rem);
+	box-shadow: 0 0 10px var(--accent);
 }
+
+.login *,
+.register * {
+	margin: 1em;
+}
+
+.login button,
+.register button {
+	animation: boxOut 0.2s linear 0s 1 forwards;
+	border-radius: 0;
+	padding: 1em 3em;
+	background-color: var(--bg);
+	border: 2px solid var(--fg);
+	color: var(--fg);
+}
+
+.login button:hover,
+.register button:hover {
+	animation: boxIn 0.2s linear 0s 1 forwards;
+}
+
+.login input,
+.register input {
+	border:none;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 1em;
+	background-color: var(--bg);
+	border-bottom: 1px solid var(--fg);
+	color: var(--fg);
+	font-size: clamp(1rem, -0.2rem + 2vw, 1rem);
+}
+
+.login input:focus,
+.register input:focus {
+	animation:boxIn 0.2s linear 0s 1 forwards;
+	box-shadow: 0 0 0px var(--accent);
+	border-bottom: 1px solid var(--fg);
+	outline: none;
+}
+
+.pageTitle {
+	font-size: clamp(2.5rem, -0.6rem + 8vw, 3.5rem);
+	text-align: center;
+	padding-top: 5%;
+	font-family: 'Fira Code', monospace;
+	text-shadow: 0 0 10px var(--accent);
+}
+
+.container {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2.5vw;
+	margin: 1vw 0 5vw 0;
+	padding: 5%;
+}
+
+.item {
+	animation: boxOut 0.1s linear 0s 1 forwards, shrink 0.1s ease 0s 1 forwards;
+	border-radius: 6px;
+	font-size: 2em;
+	border: 2px solid var(--fg);
+	box-shadow: 0 0 0px var(--accent);
+	margin: 3%;
+}
+
+.item:hover {
+	animation: boxIn 0.1s linear 0s 1 forwards, grow 0.1s ease 0s 1 forwards;
+}
+
+.item img {
+	max-width: 100%;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.item p {
+	padding: 0 1%;
+	margin: 4%;
+	text-align: center;
+	font-size: min(1em, 5vw);
+} 
 
 /* Fades In The Content Of The Page (Sans Menu & Footer) */
 @keyframes fadeIn {
@@ -126,5 +215,45 @@ span.purple {
 
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes boxIn {
+	from {
+		box-shadow: 0 0 0px var(--accent);
+	}
+
+	to {
+		box-shadow: 0 0 15px var(--accent);
+	}
+}
+
+@keyframes boxOut {
+	from {
+		box-shadow: 0 0 15px var(--accent);
+	}
+
+	to {
+		box-shadow: 0 0 0px var(--accent);
+	}
+}
+
+@keyframes shrink {
+	from {
+		transform: scale(1.015);
+	}
+
+	to {
+		transform: scale(1.0);
+	}
+}
+
+@keyframes grow {
+	from {
+		transform: scale(1.0);
+	}
+
+	to {
+		transform: scale(1.015);
 	}
 }

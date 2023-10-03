@@ -28,6 +28,8 @@
     echo "<div class=\"header\" id=\"header\"> \n";
     echo "\t<a class=\"menuLogo\" href=\"./\">「 <span class=\"purple\">ESOTERIC</span> 」</a> \n";
     echo "\t<a href=\"about.php\">「 ABOUT US 」</a> \n";
+    echo "\t<a href=\"login.php\">「 LOGIN 」</a> \n";
+    echo "\t<a href=\"drops.php\">「 DROPS 」</a> \n";
     // echo "\t<a href=\"template.php\">「 TEMPLATE 」</a> \n";
     // echo "\t <a href=\"javascript:void 0;\" class=\"icon\" onclick=\"menu \"> \n";
     // echo "\t <i class=\"fa fa-bars\"></i> \n";

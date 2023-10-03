@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			// Set The Text Of The 'brandname' element To The Output Of The "glitch" Function"
 			document.getElementsByClassName("brandname")[0].innerText = glitch("ESOTERIC");
 		}
+		if (document.getElementsByClassName("pageTitle")[0] !== undefined) {
+			// Set The Text Of The 'brandname' element To The Output Of The "glitch" Function"
+			document.getElementsByClassName("pageTitle")[0].innerText = "「 " + glitch("DROPS") + " 」";
+		}
 	}, 80);
 });
 
