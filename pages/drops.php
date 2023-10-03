@@ -4,32 +4,32 @@
 
 <div class="container">
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
     <div class="item">
-        <img src="../assets/images/logo.png" />
-        <p>Product   100$</p>
+        <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+        <p>Product 100$</p>
     </div>
 </div>
 
