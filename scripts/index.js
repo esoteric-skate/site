@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		// Set The Title (Name On Tab) To The Output Of The "glitch" Function"
 		document.title = "「 " + glitch("ESOTERIC") + " 」";
 		// Checks If An Elelement With The ID "brandname" exist
-		if (document.getElementsByClassName("brandname") !== null) {
+		if (document.getElementsByClassName("brandname")[0] !== undefined) {
 			// Set The Text Of The 'brandname' element To The Output Of The "glitch" Function"
 			document.getElementsByClassName("brandname")[0].innerText = glitch("ESOTERIC");
 		}
