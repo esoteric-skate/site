@@ -17,7 +17,7 @@
     </div>
     <div class="item">
         <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
-        <p>Product 100$</p>
+        <p>Products 100$</p>
     </div>
     <div class="item">
         <img src="../assets/images/logo.png" alt="esoteric-skate logo" />

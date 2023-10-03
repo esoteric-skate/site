@@ -123,6 +123,14 @@ span.purple {
 	box-shadow: 0 0 10px var(--accent);
 }
 
+.login {
+	float: left;
+}
+
+.register {
+	float: right;
+}
+
 .login *,
 .register * {
 	margin: 1em;
