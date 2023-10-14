@@ -12,7 +12,7 @@ The site is hosted on a VPS using Nginx for the web server, myphpadmin to manage
 - `scripts/` js files for the project
 - `services/` houses css for the site
 
-## Domains
-This site has **2** diffrent domains.
-- Domain one (https://live.esoteric.host) is for testing and development.
-- Domain two (https://esoteric.host) is the production URL which pulls code from this repo after it has been reviewed.
+## URL's
+This site has **2** diffrent locations.
+- The testing and dev branch is at https://live.esoteric.host.
+- The production branch is at https://esoteric.host and pulls code from this repo after it has been reviewed.
