@@ -10,7 +10,7 @@ The site is hosted on a VPS using Nginx for the web server, myphpadmin to manage
 - `includes/` php files with boilerplate code for the pages
 - `pages/` all of the actual content for the diffrent pages
 - `scripts/` js files for the project
-- `services/` houses css for the site
+- `styles/` houses css for the site
 
 ## URL's
 This site has **2** diffrent locations.
