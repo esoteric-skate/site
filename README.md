@@ -1,4 +1,4 @@
-# This Respository Is The Home For The Esoteric Skate Site
+# "Esoteric Skate" Site
 
 This is a simple site for the made up brand "Esoteric Skate" for a college class. The site consist of html, vanilla js, css, php, and mysql.
 
