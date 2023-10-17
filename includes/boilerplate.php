@@ -18,6 +18,7 @@
     echo "\t<meta name=\"theme-color\" content=\"#ba90ee\" /> \n";
     echo "\t<link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/images/favicon.ico\" /> \n";
     echo "\t<link rel=\"stylesheet\" href=\"../styles/style.css\" /> \n";
+    echo " <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
     echo "\t<script defer=\"defer\" type=\"text/javascript\" src=\"../scripts/index.js\"></script> \n";
     echo "</head> \n";
 
@@ -30,10 +31,9 @@
     echo "\t<a href=\"login.php\">「 LOGIN 」</a> \n";
     echo "\t<a href=\"about.php\">「 ABOUT US 」</a> \n";
     echo "\t<a href=\"drops.php\">「 DROPS 」</a> \n";
-    // echo "\t<a href=\"template.php\">「 TEMPLATE 」</a> \n";
-    // echo "\t <a href=\"javascript:void 0;\" class=\"icon\" onclick=\"menu \"> \n";
-    // echo "\t <i class=\"fa fa-bars\"></i> \n";
-    // echo "\t </a> \n";
+    echo "\t <a href=\"javascript:void 0;\" class=\"icon\" onclick=\"menu \"> \n";
+    echo "\t <i class=\"fa fa-bars\"></i> \n";
+    echo "\t </a> \n";
     echo "</div> \n";
     echo "<div class=\"content\"> \n\n";
 ?>

@@ -2,17 +2,13 @@
 
 <div class="centered">
     <h1>About ESOTERIC Skate: </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nostrum omnis laborum laudantium nihil voluptatem vel quisquam voluptate
-        fuga perspiciatis? Quis distinctio expedita nisi quia quidem neque quo
-        repudiandae eligendi quibusdam excepturi, illum ipsa sequi facilis ea hic
-        dolore sint deserunt nesciunt est doloremque quisquam velit quas? Aliquid
-        inventore sequi asperiores?
+    <p>
+        Welcome to ESOTERIC Skate. We are a small company based in Los Angeles California since 2018.
+        Our Focus is creating skate related products that will help put you in a league of your own and
+        make you stand out in a crowd giving you the space you deserve.
     </p>
-    <h1>Phone:</h1>
-    <p>(666) 666-6666</p>
-    <h1>Email:</h1>
-    <p>contact@esoteric.host</p>
+    <h1>Phone: <a class="contact" href="tel:(666) 666-6666">(666) 666-6666</a></h1>
+    <h1>Email: <a class="contact" href="mailto:constact@esoteric.host" >contact@esoteric.host</a></h1>
 </div>
 
 <?php include("../includes/footer.php") ?>
