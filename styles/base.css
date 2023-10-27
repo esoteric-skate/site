@@ -16,8 +16,8 @@ New CSS In "style.css" Can Overwrite This
 :root {
 	/* Set Up Color Variables */
 	--bg: #222222;
-	--fg: #eeeeee;
-	--accent: #ba90ee;
+	--fg: #EEEEEE;
+	--accent: #BA90EE;
 
 	background-color: var(--bg);
 	color: var(--fg);
@@ -150,6 +150,12 @@ span.purple {
 	color: var(--fg);
 }
 
+.dollarSign {
+	font-family: 'VanBerger';
+	color: var(--accent);
+	font-size: min(1.1em, 5.5vw);
+}
+
 .login button:hover,
 .register button:hover {
 	animation: boxIn 0.2s linear 0s 1 forwards;
@@ -198,7 +204,6 @@ span.purple {
 	border-radius: 6px;
 	font-size: 2em;
 	border: 2px solid var(--fg);
-	box-shadow: 0 0 0px var(--accent);
 	margin: 3%;
 }
 
@@ -207,9 +212,33 @@ span.purple {
 }
 
 .item img {
+	box-shadow: inset 0 0 10px var(--accent);
+	-moz-box-shadow: inset 0 0 10px var(--accent);
 	max-width: 100%;
-	border-radius: 5px;
+	margin: auto;
+	border-radius: 0px;
 	overflow: hidden;
+	border-bottom: 2px solid var(--fg);
+}
+
+.item hr {
+	opacity: 0;
+	animation: 1s shrinkLine;
+	margin:0 auto;
+	padding: 0;
+	color: var(--accent);
+	max-width: 0;
+}
+
+.item:hover hr {
+	visibility: visible;
+	margin:0 auto;
+	animation: 1s growLine forwards;
+	color: var(--accent);
+}
+
+.item p:nth-child(2) {
+	border-bottom: 2px sloid var(--accent);
 }
 
 .item p {
@@ -230,6 +259,30 @@ span.purple {
 }
 
 /* Fades In The Content Of The Page (Sans Menu & Footer) */
+@keyframes growLine {
+	from {
+		max-width: 0;
+		opacity: 0;
+	}
+
+	to {
+		max-width: 80%;
+		opacity: 100%;
+	}
+}
+
+@keyframes shrinkLine {
+	from {
+		max-width: 80%;
+		opacity: 100%;
+	}
+
+	to {
+		max-width: 0;
+	}
+}
+
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;

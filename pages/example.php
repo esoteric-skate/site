@@ -2,7 +2,7 @@
 
 <!-- This Line Puts In All Of the Code From The File "boilerplate.php"
 This Includes All Of The Head As Well As The Menu -->
-<?php include("../includes/boilerplate.php") ?>
+<?php readfile("../includes/boilerplate.html"); ?>
 
 <!-- Between The Two Includes Is Where The Actual Content For The Page Goes
 Everything Else Is Already Included By Lines 5 And 19 -->
@@ -16,4 +16,4 @@ Everything Else Is Already Included By Lines 5 And 19 -->
 
 <!-- This Line Puts In All Of the Code From The File "footer.php"
 This Includes The Footer As Well As The Closing Tags -->
-<?php include("../includes/footer.php") ?>
+<?php readfile("../includes/footer.html"); ?>

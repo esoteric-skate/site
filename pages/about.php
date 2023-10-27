@@ -1,4 +1,4 @@
-<?php include("../includes/boilerplate.php") ?>
+<?php readfile("../includes/boilerplate.html"); ?>
 
 <div class="centered">
     <h1>About ESOTERIC Skate: </h1>
@@ -11,4 +11,4 @@
     <h1>Email: <a class="contact" href="mailto:constact@esoteric.host" >contact@esoteric.host</a></h1>
 </div>
 
-<?php include("../includes/footer.php") ?>
+<?php readfile("../includes/footer.html"); ?>

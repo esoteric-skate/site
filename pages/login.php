@@ -1,24 +1,24 @@
-<?php include("../includes/boilerplate.php") ?>
+<?php readfile("../includes/boilerplate.html"); ?>
 
 <div class="centered">
     <div class="register">
         <label for="ruser"><b>Username</b></label>
-        <input type="text" name="ruser" />
+        <input type="text" id="ruser" name="ruser" />
         <br />
         <label for="rpass"><b>Password</b></label>
-        <input type="password" name="rpass" />
+        <input type="password" id="rpass" name="rpass" />
         <br />
-        <button type="submit">Register</button>
+        <button type="submit" onclick="register()" >Register</button>
     </div>
     <div class="login">
         <label for="luser"><b>Username</b></label>
-        <input type="text" name="luser" />
+        <input type="text" id="luser" name="luser" />
         <br />
         <label for="lpass"><b>Password</b></label>
-        <input type="password" name="lpass" />
+        <input type="password" id="lpass" name="lpass" />
         <br />
         <button type="submit">Login</button>
     </div>
 </div>
 
-<?php include("../includes/footer.php") ?>
+<?php readfile("../includes/footer.html"); ?>
