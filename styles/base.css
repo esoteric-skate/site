@@ -79,11 +79,6 @@ span.purple {
 	color: var(--bg);
 }
 
-.header .icon {
-	/* display: none; */
-	padding: 1em;
-}
-
 .logo {
 	margin: 5vh auto;
 	width: min(80vh, 90vw);
@@ -148,6 +143,7 @@ span.purple {
 	background-color: var(--bg);
 	border: 2px solid var(--fg);
 	color: var(--fg);
+	float: right;
 }
 
 .dollarSign {
@@ -171,6 +167,14 @@ span.purple {
 	border-bottom: 1px solid var(--fg);
 	color: var(--fg);
 	font-size: clamp(1rem, -0.2rem + 2vw, 1rem);
+	float: right;
+}
+
+.login label,
+.register label {
+	padding: 1.1em 0;
+	margin: 1em 0;
+	float: left;
 }
 
 .login input:focus,
@@ -223,17 +227,18 @@ span.purple {
 
 .item hr {
 	opacity: 0;
-	animation: 1s shrinkLine;
-	margin:0 auto;
+	transition: opacity 0.5s;
+	animation: 0.5s shrinkLine;
+	margin: 0 auto;
 	padding: 0;
 	color: var(--accent);
 	max-width: 0;
 }
 
 .item:hover hr {
-	visibility: visible;
-	margin:0 auto;
-	animation: 1s growLine forwards;
+	opacity: 1;
+	margin: 0 auto;
+	animation: 0.5s growLine forwards;
 	color: var(--accent);
 }
 
@@ -258,27 +263,52 @@ span.purple {
 	text-shadow: 1px 1px 0px var(--accent);
 }
 
-/* Fades In The Content Of The Page (Sans Menu & Footer) */
-@keyframes growLine {
-	from {
-		max-width: 0;
-		opacity: 0;
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24
+}
+
+.header svg {
+	display: none;
+	padding: 0.84em;
+	color: var(--fg)
+}
+
+@media screen and (max-width: 550px) {
+	.header svg {
+		float: right;
+		display: block;
 	}
 
+	.header a:not(:first-child) {
+		display: none;
+	}
+
+	.header.open a,
+	.header.open svg {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+}
+
+/* Fades In The Content Of The Page (Sans Menu & Footer) */
+@keyframes growLine {
 	to {
 		max-width: 80%;
-		opacity: 100%;
 	}
 }
 
 @keyframes shrinkLine {
 	from {
 		max-width: 80%;
-		opacity: 100%;
 	}
 
 	to {
-		max-width: 0;
+		max-width: 0%;
 	}
 }
 

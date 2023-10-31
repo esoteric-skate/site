@@ -29,6 +29,15 @@ function glitch(input) {
 	return Math.random() < (20 / 100) ? Array.from(input).toSpliced(idx, 1, flipped).join("") : input;
 }
 
+function toggleMenu() {
+	if (document.getElementById("header").className === "header") {
+		document.getElementById("header").className += " open";
+	}
+	else {
+		document.getElementById("header").className = "header";
+	}
+}
+
 function register() { 
 	var input = document.getElementById("autonumero");
 	sessionStorage.setItem("autonumero", input.value);

@@ -5,6 +5,9 @@
         <label for="ruser"><b>Username</b></label>
         <input type="text" id="ruser" name="ruser" />
         <br />
+        <label for="ruser"><b>Email</b></label>
+        <input type="text" id="remail" name="remail" />
+        <br />
         <label for="rpass"><b>Password</b></label>
         <input type="password" id="rpass" name="rpass" />
         <br />
