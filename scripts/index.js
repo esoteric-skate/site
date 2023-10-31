@@ -10,6 +10,10 @@ AND THERE IS NO BACKEND */
 let uernames = [], passwords = [];
 
 document.addEventListener("DOMContentLoaded", (event) => {
+	var cDate = new Date();
+	var cYear = cDate.getFullYear();
+	document.querySelector("#cYear").innerHTML = cYear;
+
 	setInterval(() => {
 		document.title = "「 " + glitch("ESOTERIC") + " 」";
 		if (document.getElementsByClassName("brandname")[0] !== undefined) {

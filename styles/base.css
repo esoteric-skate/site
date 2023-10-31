@@ -93,7 +93,7 @@ span.purple {
 }
 
 .greeting {
-	font-size: clamp(2.5rem, -0.6rem + 8vw, 3.5rem);
+	font-size: clamp(3rem, -1.2rem + 16vw, 7rem);
 	margin: auto 1em;
 }
 
@@ -209,20 +209,32 @@ span.purple {
 	font-size: 2em;
 	border: 2px solid var(--fg);
 	margin: 3%;
+	display: block;
+}
+
+a.item {
+	text-decoration: none;
+	color: var(--fg);
 }
 
 .item:hover {
 	animation: boxIn 0.1s linear 0s 1 forwards, grow 0.1s ease 0s 1 forwards;
 }
 
-.item img {
+.imgContainer {
 	box-shadow: inset 0 0 10px var(--accent);
-	-moz-box-shadow: inset 0 0 10px var(--accent);
-	max-width: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
 	margin: auto;
-	border-radius: 0px;
-	overflow: hidden;
-	border-bottom: 2px solid var(--fg);
+	border-radius: 0;
+	border-bottom: solid var(--fg) 2px;
+}
+
+.item img {
+	max-width: 100%;
+	height: max(20vw, 30vh);
+	object-fit: scale-down;
 }
 
 .item hr {
@@ -263,6 +275,20 @@ span.purple {
 	text-shadow: 1px 1px 0px var(--accent);
 }
 
+.productContainer {
+	margin-top: 3em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.productImg img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	object-fit: scale-down;
+	max-width: min(90%, 50vh);
+}
+
 .material-symbols-outlined {
 	font-variation-settings:
 		'FILL' 0,
@@ -291,6 +317,7 @@ span.purple {
 	.header.open svg {
 		display: block;
 		float: left;
+		padding: 0.75em 0;
 		width: 100%;
 	}
 }
