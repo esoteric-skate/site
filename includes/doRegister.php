@@ -2,6 +2,11 @@
 
 session_start();
 
+if (isset($_SESSION["curUser"])) {
+    header("Location: ../../pages/index.php" );
+    exit();
+}
+
 $uname = $_POST["ruser"];
 $email = $_POST["remail"];
 $pass = $_POST["rpass"];
@@ -52,7 +57,7 @@ else {
     exit();
 }
 
-$_SESSION["curUser"] = $user;
+$_SESSION["curUser"] = $uname;
 
 header("Location: ../../pages/index.php" );
 exit();

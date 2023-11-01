@@ -1,4 +1,11 @@
-<?php session_start(); readfile("../includes/boilerplate.html"); ?>
+<?php include("../includes/boilerplate.php"); 
+
+if (isset($_SESSION["curUser"])) {
+    header("Location: ../../pages/account.php" );
+    exit();
+}
+
+?>
 
 <div class="centered">
     <div class="register">

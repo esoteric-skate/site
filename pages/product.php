@@ -1,5 +1,5 @@
 <?php
-readfile("../includes/boilerplate.html");
+include("../includes/boilerplate.php");
 ?>
 
 <div class="content">

@@ -25,7 +25,15 @@
 <body>
     <div class="header" id="header">
         <a class="menuLogo" href="./">「 <span class="purple">ESOTERIC</span> 」</a>
-        <a href="login.php">「 LOGIN 」</a>
+        <?php
+            session_start();
+            if (!isset($_SESSION["curUser"])) {
+                echo "<a href=\"login.php\">「 LOGIN 」</a>";
+            }
+            else {
+                echo "<a href=\"account.php\">「 ACCOUNT 」</a>";                
+            }
+        ?>
         <a href="about.php">「 ABOUT US 」</a>
         <a href="drops.php">「 DROPS 」</a>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" onclick=" toggleMenu()">

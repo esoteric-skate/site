@@ -1,4 +1,4 @@
-<?php readfile("../includes/boilerplate.html"); ?>
+<?php include("../includes/boilerplate.php"); ?>
 
 <div class="pageTitle">DROPS</div>
 

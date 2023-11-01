@@ -2,6 +2,11 @@
 
 session_start();
 
+if (isset($_SESSION["curUser"])) {
+    header("Location: ../../pages/index.php" );
+    exit();
+}
+
 $uname = $_POST["luser"];
 $pass = $_POST["lpass"];
 
@@ -31,7 +36,7 @@ if (!isset($_SESSION["passwords"])) {
 }
 
 if (array_search($uname, $_SESSION["usernames"]) !== false && password_verify($pass, $_SESSION["passwords"][array_search($uname, $_SESSION["usernames"])])) {
-    $_SESSION["curUser"] = $user;
+    $_SESSION["curUser"] = $uname;
 }
 else {
     $_SESSION["lError"] = "INVALID LOGIN";

@@ -1,4 +1,4 @@
-<?php readfile("../includes/boilerplate.html"); ?>
+<?php include("../includes/boilerplate.php"); ?>
 
 <div class="centered">
     <h1>About ESOTERIC Skate: </h1>
