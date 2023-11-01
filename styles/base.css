@@ -310,6 +310,11 @@ a.item {
 	color: var(--accent);
 }
 
+.error {
+	color: red;
+	font-size: medium !important;
+}
+
 @media screen and (max-width: 550px) {
 	.header svg {
 		float: right;
