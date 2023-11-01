@@ -71,4 +71,4 @@
     </a>
 </div>
 
-<?php readfile("../includes/footer.html"); ?>
+<?php include("../includes/footer.php"); ?>

@@ -11,4 +11,4 @@
     <h1>Email: <a class="contact" href="mailto:constact@esoteric.host" >contact@esoteric.host</a></h1>
 </div>
 
-<?php readfile("../includes/footer.html"); ?>
+<?php include("../includes/footer.php"); ?>

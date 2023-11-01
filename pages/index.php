@@ -5,4 +5,4 @@
     <p class="greeting">Welcome To <span class="brandname">ESOTERIC</span> Skate<?php if (isset($_SESSION["curUser"])) echo ", " . $_SESSION["curUser"] ?></p>
 </div>
 
-<?php readfile("../includes/footer.html"); ?>
+<?php include("../includes/footer.php"); ?>

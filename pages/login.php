@@ -48,4 +48,4 @@ if (isset($_SESSION["curUser"])) {
     </div>
 </div>
 
-<?php readfile("../includes/footer.html"); ?>
+<?php include("../includes/footer.php"); ?>
