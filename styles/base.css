@@ -303,6 +303,13 @@ a.item {
 	color: var(--fg)
 }
 
+.prodDivider {
+	max-width: 0;
+	animation: growLineFull 1s 0.5s forwards;
+	margin-left:0;
+	color: var(--accent);
+}
+
 @media screen and (max-width: 550px) {
 	.header svg {
 		float: right;
@@ -326,6 +333,12 @@ a.item {
 @keyframes growLine {
 	to {
 		max-width: 80%;
+	}
+}
+
+@keyframes growLineFull {
+	to {
+		max-width: 100%;
 	}
 }
 

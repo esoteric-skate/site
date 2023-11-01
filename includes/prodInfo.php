@@ -37,6 +37,7 @@ function getProduct($item) {
     echo "</div>";
     echo "<div class=\"productDesc\">";
     echo "<h1>" . $prettyName . "</h1>";
+    echo "<hr class=\"prodDivider\" />";
     echo "<p>" . $desc . "</p>";
     echo "<p>" . $price . " <span class=\"dollarSign\">$</span></p>";
     echo "</div>";

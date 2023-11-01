@@ -4,11 +4,6 @@ That Are Used On Every Page. More JS
 Files Can Be Made For Specific Use Cases
 =======================================*/
 
-/* THIS IS JUST TO FAKE A LOGIN SYSTEM DONT 
-ENTER IMPORTANT STUFF IM NOT HASHING ANYTHING
-AND THERE IS NO BACKEND */
-let uernames = [], passwords = [];
-
 document.addEventListener("DOMContentLoaded", (event) => {
 	var cDate = new Date();
 	var cYear = cDate.getFullYear();
@@ -41,9 +36,3 @@ function toggleMenu() {
 		document.getElementById("header").className = "header";
 	}
 }
-
-function register() { 
-	var input = document.getElementById("autonumero");
-	sessionStorage.setItem("autonumero", input.value);
-	return true;
-  } 
