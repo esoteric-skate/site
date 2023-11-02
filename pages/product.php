@@ -12,5 +12,5 @@ include("../includes/boilerplate.php");
 </div>
 
 <?php
-readfile("../includes/footer.html");
+readfile("../includes/footer.php");
 ?>

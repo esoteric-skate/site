@@ -1,5 +1,7 @@
 <?php include("../includes/boilerplate.php"); ?>
 
+<?php include("../includes/sidebar.php"); ?>
+
 <div class="pageTitle">DROPS</div>
 
 <div class="container">
@@ -38,10 +40,10 @@
     <a class="item" href="/product.php?item=">
         <div class="imgContainer">
             <div class="imgContainer">
-                <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+                <img src="../assets/images/truck2.png" alt="esoteric-skate logo" />
             </div>
         </div>
-        <p>Truck</p>
+        <p>Epic Trucks</p>
         <hr />
         <p>100 <span class="dollarSign">$</span></p>
     </a>

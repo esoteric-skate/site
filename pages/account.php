@@ -8,7 +8,7 @@ if (!isset($_SESSION["curUser"])) {
 ?>
 
 <div class="centered">
-    <div class="register">
+    <div class="form">
         <p>Account:</p>
         <form action="../includes/doLogout.php" method="post">
             <button>Logout</buton>

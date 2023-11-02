@@ -36,3 +36,17 @@ function toggleMenu() {
 		document.getElementById("header").className = "header";
 	}
 }
+
+function switchForm(shown) {
+	console.log("shown: " + shown);
+	if (shown == "login") {
+		document.getElementsByClassName("register")[0].style.display = "none";
+		document.getElementsByClassName("register")[1].style.display = "none";
+		document.getElementsByClassName("login")[0].style.removeProperty("display");
+	}
+	else {
+		document.getElementsByClassName("register")[0].style.removeProperty("display");
+		document.getElementsByClassName("register")[1].style.removeProperty("display");		
+		document.getElementsByClassName("login")[0].style.display = "none";
+	}
+}
