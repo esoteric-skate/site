@@ -7,69 +7,67 @@
 <div class="container">
     <a class="item" href="/product.php?item=deck1">
         <div class="imgContainer">
-            <img src="../assets/images/deck.png" alt="esoteric-skate deck" />
+            <img src="../assets/images/deck1.png" alt="esoteric-skate deck" />
         </div>
-        <p>Deck</p>
+        <p>Astral Deck</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>60 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=truck1">
+    <a class="item" href="/product.php?item=truck2">
         <div class="imgContainer">
-            <img src="../assets/images/truck1.png" alt="esoteric-skate logo" />
+            <img src="../assets/images/truck2.png" alt="esoteric-skate logo" />
         </div>
-        <p>Mythic Trucks</p>
+        <p>Mythic Trucks (2)</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>80 <span class="dollarSign">$</span></p>
     </a>
     <a class="item" href="/product.php?item=wheels">
         <div class="imgContainer">
             <img src="../assets/images/wheel.png" alt="esoteric-skate logo" />
         </div>
-        <p>Glide Wheels</p>
+        <p>Glide Wheels (4)</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>40 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=">
+    <a class="item" href="/product.php?item=deck2">
         <div class="imgContainer">
-            <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+            <img src="../assets/images/deck2.png" alt="esoteric-skate logo" />
         </div>
-        <p>Deck</p>
+        <p>Etherial Deck</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>60 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=">
+    <a class="item" href="/product.php?item=truck1">
         <div class="imgContainer">
-            <div class="imgContainer">
-                <img src="../assets/images/truck2.png" alt="esoteric-skate logo" />
-            </div>
+            <img src="../assets/images/truck1.png" alt="esoteric-skate logo" />
         </div>
-        <p>Epic Trucks</p>
+        <p>Unreal Trucks (2)</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>55 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=">
+    <a class="item" href="/product.php?item=wheels2">
         <div class="imgContainer">
-            <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+            <img src="../assets/images/wheel2.png" alt="esoteric-skate logo" />
         </div>
-        <p>Wheel</p>
+        <p>Spectre Wheels (4)</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>40 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=">
+    <a class="item" href="/product.php?item=bearing">
         <div class="imgContainer">
-            <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+            <img src="../assets/images/bearing.png" alt="esoteric-skate logo" />
         </div>
-        <p>Shirt</p>
+        <p>Surreal Bearings (8)</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>30 <span class="dollarSign">$</span></p>
     </a>
-    <a class="item" href="/product.php?item=">
+    <a class="item" href="/product.php?item=tool">
         <div class="imgContainer">
-            <img src="../assets/images/logo.png" alt="esoteric-skate logo" />
+            <img src="../assets/images/tool.png" alt="esoteric-skate logo" />
         </div>
-        <p>Tool Pack</p>
+        <p>Skate Tool</p>
         <hr />
-        <p>100 <span class="dollarSign">$</span></p>
+        <p>15$ <span class="dollarSign">$</span></p>
     </a>
 </div>
 
