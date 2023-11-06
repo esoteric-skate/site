@@ -6,8 +6,8 @@ This is a simple site for the made up brand "Esoteric Skate" for a college class
 The site is hosted on a VPS using Nginx for the web server, php-fpm, and certbot from Let's Encrypt for certificate managment.
 
 ## Structure
-- `assests/` includes all assets for the site, namely fonts and images
-- `includes/` php files with boilerplate code for the pages
+- `assests/` includes all assets for the site, namely fonts and images, and icons
+- `includes/` php files with boilerplate code for the pages and other utility things
 - `pages/` all of the actual content for the diffrent pages
 - `scripts/` js files for the project
 - `styles/` houses css for the site
@@ -18,4 +18,4 @@ This site has **2** diffrent locations.
 - The production branch is at https://esoteric.host and pulls code from this repo after it has been reviewed.
 
 ## Note
-Logins are fake there is no DB all credentials are saved as session variables since this is a concept site. Be smart, don't enter any real credentials into this site.
+Logins are fake there is no DB all credentials are saved as session variables since this is a concept site. Be smart, don't enter any real credentials into this site (passwords do get hashed though).
