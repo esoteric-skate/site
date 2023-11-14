@@ -5,7 +5,8 @@ Files Can Be Made For Specific Use Cases
 =======================================*/
 
 document.addEventListener("DOMContentLoaded", (event) => {
-	let cartOpen = false;
+
+	// gets date and sets it in the footer
 	var cDate = new Date();
 	var cYear = cDate.getFullYear();
 	document.querySelector("#cYear").innerHTML = cYear;
@@ -20,6 +21,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		}
 	}, 80);
 
+	// toggles the cart open or closed if it gets click on or clicked off of
+	let cartOpen = false;
 	document.addEventListener("click", function (e) {
 		if (!cartOpen && (e.target.offsetParent.id == "cart" || e.target.id == "cart")) {
 			cartOpen = true;
@@ -32,14 +35,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	});
 });
 
+// retruns string with a chance of a letter being swapped
 function glitch(input) {
-	const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+	const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 	let flipped = chars.charAt(Math.floor(Math.random() * chars.length));
 	let idx = Math.floor(Math.random() * input.length);
 
 	return Math.random() < (20 / 100) ? Array.from(input).toSpliced(idx, 1, flipped).join("") : input;
 }
 
+// toggles css classes to open and close mobile menu
 function toggleMenu() {
 	if (document.getElementById("header").className === "header") {
 		document.getElementById("header").className += " open";
@@ -49,6 +54,7 @@ function toggleMenu() {
 	}
 }
 
+// toggles between showing login and showing register
 function switchForm(shown) {
 	console.log("shown: " + shown);
 	if (shown == "login") {
