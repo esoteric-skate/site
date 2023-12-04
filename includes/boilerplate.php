@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../styles/style.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<script defer="defer" type="text/javascript" src="../scripts/index.js"></script>
-	<style>
+	<style type="text/css">
 		.content {
 			opacity: 0;
 		}
@@ -31,8 +31,6 @@
 		?>
 		<a href="about.php">「 ABOUT US 」</a>
 		<a href="drops.php">「 DROPS 」</a>
-		<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" onclick=" toggleMenu()">
-			<path fill="#EEEEEE" d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z" />
-		</svg>
+		<a class="menuButton" onclick="toggleMenu()">&#9776;</a>
 	</div>
 	<div class="content" id="content">

@@ -40,7 +40,7 @@ function glitch(input) {
 	const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 	let flipped = chars.charAt(Math.floor(Math.random() * chars.length));
 	let idx = Math.floor(Math.random() * input.length);
-
+	
 	return Math.random() < (20 / 100) ? Array.from(input).toSpliced(idx, 1, flipped).join("") : input;
 }
 
@@ -52,6 +52,10 @@ function toggleMenu() {
 	else {
 		document.getElementById("header").className = "header";
 	}
+}
+
+function goToLink(location) {
+	window.location = location;
 }
 
 // toggles between showing login and showing register
