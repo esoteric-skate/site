@@ -160,7 +160,7 @@ span.purple {
 	box-shadow: 0 0 10px var(--accent);
 }
 
-input:invalid {
+.invalid:focus {
 	transition: box-shadow 0.3s;
 	box-shadow: 0 0 10px red !important;
 }
@@ -273,9 +273,6 @@ a.item {
 	margin: auto;
 	object-fit: scale-down;
 	max-width: 90%;
-}
-
-.toTop {
 }
 
 .contact:hover {

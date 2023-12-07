@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			document.getElementsByClassName("pageTitle")[0].innerText = "「 " + glitch("DROPS") + " 」";
 		}
 	}, 80);
+
+	isEmpty();
 });
 
 function glitch(input) {
@@ -28,5 +30,31 @@ function toggleMenu() {
 	}
 	else {
 		document.getElementById("header").className = "header";
+	}
+}
+
+function checkBlanks() {
+	if (document.getElementsByTagName("form").length != 0) {
+		for (var i = 0; i < document.getElementsByTagName("form")[0].length - 1; i++) {
+			if (document.getElementsByTagName("form")[0][i].value == "") {
+				alert("Please Fill In All Fields")
+				return false;
+			}
+		}
+	}
+}
+
+function isEmpty() {
+	if (document.getElementsByTagName("form").length != 0) {
+		setTimeout(() => {
+			for (var i = 0; i < document.getElementsByTagName("form")[0].length - 1; i++) {
+				if (document.getElementsByTagName("form")[0][i].value == "") {
+					document.getElementsByTagName("form")[0][i].className = ("invalid");
+				}
+				else {
+					document.getElementsByTagName("form")[0][i].className = ("");
+				}
+			}
+		}, 1)
 	}
 }
