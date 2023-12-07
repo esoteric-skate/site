@@ -12,14 +12,27 @@ if (isset($_SESSION["curUser"])) {
 <div class="form register">
 	<form action="./doRegister.php" method="post" required="true">
 		<p>Register</p>
+		<?php
+		if (isset($_SESSION['rError'])) {
+			echo "<script type=\"text/javascript\">switchForm('register');</script>";
+			echo ("<p class=\"error\">" . $_SESSION['rError'] . "</p>");
+			echo ("<style>.red {visibility: visible;}</style>");
+		}
+		?>
+		<label><b>First Name</b></label>
+		<input type="text" required="true" />
+		<br />
+		<label><b>Last Name</b></label>
+		<input type="text" required="true" />
+		<br />
 		<label for="ruser"><b>Username</b></label>
-		<input type="text" id="ruser" name="ruser" required="true"/>
+		<input type="text" id="ruser" name="ruser" required="true" />
 		<br />
 		<label for="ruser"><b>Email</b></label>
-		<input type="text" id="remail" name="remail" required="true"/>
+		<input type="text" id="remail" name="remail" required="true" />
 		<br />
 		<label for="rpass"><b>Password</b></label>
-		<input type="password" id="rpass" name="rpass" required="true"/>
+		<input type="password" id="rpass" name="rpass" required="true" />
 		<br />
 		<button type="submit">Register</button>
 		<a class="infoText" href="./login.php">Already Have An Account?</a>

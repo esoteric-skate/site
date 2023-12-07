@@ -1,6 +1,6 @@
 <?php include("./boilerplate.php"); ?>
 
-<div class="pageTitle">DROPS</div>
+<div id="top" class="pageTitle">DROPS</div>
 
 <div class="container">
 	<div class="item" onclick="window.location = '/product.php?item=deck1';">
@@ -76,5 +76,6 @@
 		<p>15$ <span class="dollarSign">$</span></p>
 	</div>
 </div>
+<p class="toTop"><a href="#top">Jump to Top</a></p>
 
 <?php include("./footer.php"); ?>

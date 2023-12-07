@@ -9,7 +9,9 @@ if (!isset($_SESSION["curUser"])) {
 
 <div class="centered">
 	<div class="form">
-		<p>Account:</p>
+		<p>Account</p>
+		<p>User: <?php echo ($_SESSION["curUser"]); ?></p>
+		<p>Reward Points: <?php echo ord(($_SESSION["curUser"])); ?></p>
 		<form action="./doLogout.php" method="post">
 			<button>Logout</buton>
 		</form>
